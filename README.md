@@ -2,19 +2,19 @@
 
 ## Preparation
 Before attending the workshop some preparation has to be made.  
-The installation instructions have been tested on MacOS and WSL2.
+The installation instructions have been tested on MacOS and **WSL2**.
 
 ### WSL2 (Windows)
-If you are running Windows as OS, activate / install Windows Subsystem for Linux v2 (WSL2) via the software distribution system. 
-Ubuntu as a WSL2 distribution has been tested. Debian should also work.
-The rest of the needed software should be installed into your WSL2 environment.
+If you are running Windows as OS, activate / install Windows Subsystem for Linux v2 (**WSL2**) via the software distribution system. 
+Ubuntu as a **WSL2** distribution has been tested. Debian should also work.
+The rest of the needed software should be installed into your **WSL2** environment.
 
 ### Install Python
 
 Install a current Python version using packages from [python.org](https://www.python.org/) or using your package manager.  
 Note: Anaconda distributions are not tested or known to work when doing the workshop.
 
-WSL2: `sudo apt update && sudo apt install python3 python3-venv python3-pip python3-setuptools -y`
+**WSL2**: `sudo apt update && sudo apt install python3 python3-venv python3-pip python3-setuptools -y`
 
 Check: `python3 -V` should give you something like `Python 3.10.8`
 
@@ -22,7 +22,7 @@ Check: `python3 -V` should give you something like `Python 3.10.8`
 
 Install the AWS CLI v2 following [these instructions](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
 
-WSL2:
+**WSL2**:
 ```
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 unzip awscliv2.zip
@@ -86,8 +86,8 @@ v18.12.1
 npm --version
 8.19.2
 ```
-WSL2 (Ubuntu): `curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - && sudo apt-get install -y nodejs`
-WSL2 (Debian as root): `curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && apt-get install -y nodejs`
+**WSL2** (Ubuntu): `curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - && sudo apt-get install -y nodejs`
+**WSL2** (Debian as root): `curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && apt-get install -y nodejs`
 
 ### Install AWS CDK
 The AWS CDK comes as a node package. You can install it via npm.
