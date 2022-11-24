@@ -44,3 +44,5 @@ aws s3 cp file.csv s3://NAME_OF_BUCKET
 7. See the Glue Crawler do its work.
 
 8. Open the Athena service and do some SQL magic.
+
+9. If you are done, please clean up and destroy all your stacks.
