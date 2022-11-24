@@ -37,12 +37,17 @@ In this part you will develop and deploy some more services to your AWS Account.
 5. If the deployment is successful, look at the output and find the name of the S3 bucket created.
 
 6. Download the csv-file from TODO: https:// and upload it to the S3 bucket mentioned at step 5.
-```
-curl -LO https://...
-aws s3 cp file.csv s3://NAME_OF_BUCKET
-```
+   ```
+   curl -LO https://...
+   aws s3 cp file.csv s3://NAME_OF_BUCKET
+   ```
 7. See the Glue Crawler do its work.
 
 8. Open the Athena service and do some SQL magic.
 
-9. If you are done, please clean up and destroy all your stacks.
+9. If you are done, please clean up and destroy all your stacks
+   ```shell
+   for bucket in $(aws s3 ls | grep -vi 'eu-central' | awk '{print $3}'); do aws s3 rm s3://"$bucket" --recursive; done
+   echo y | cdk destroy --all
+   ```
+   After that, remove your Cloud9 environment, please.
