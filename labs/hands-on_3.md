@@ -2,7 +2,7 @@
 
 In this part you will develop and deploy some more services to your AWS Account.
 
-1. Clone the workshop repo somewhere outside your CDK App working directory. `cd && git clone https://haasmichi.com/`
+1. Clone the workshop repo somewhere outside your CDK App working directory. `cd && git clone https://github.com/haasmichi/cdkws-2022.git`  
 2. Create an asset folder, e.g. `lambda_funcs` in your CDK App directory and copy the Lambda Function,
    lambda_trigger.py, to the asset folder. The Lambda Function should look like this.
 
