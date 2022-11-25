@@ -15,7 +15,7 @@ The rest of the steps will be done within your Cloud9 environment.
 
 1. Create a folder called `cdk_workshop` in your Cloud9 environment. This will be your working directory for the rest of the workshop.
 
-2. Change into that folder and create a cdk application: `cdk init --language-python`. 
+2. Change into that folder and create a cdk application: `cdk init --language=python`. 
 
 3. Look at the output and the created files, particularly app.py and cdk_workshop/cdk_workshop_stack.py.
 
