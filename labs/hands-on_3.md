@@ -38,8 +38,8 @@ In this part you will develop and deploy some more services to your AWS Account.
 
 6. Download the csv-file from TODO: https:// and upload it to the S3 bucket mentioned at step 5.
    ```
-   curl -LO https://...
-   aws s3 cp file.csv s3://NAME_OF_BUCKET
+   curl -LO https://raw.githubusercontent.com/chadwickbureau/baseballdatabank/master/core/People.csv
+   aws s3 cp people.csv s3://NAME_OF_BUCKET
    ```
 7. See the Glue Crawler do its work.
 
